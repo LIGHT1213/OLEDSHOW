@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"oledshow\startup_stm32f407xx.o"
+"oledshow\oled.o"
+"oledshow\main.o"
+"oledshow\gpio.o"
+"oledshow\stm32f4xx_it.o"
+"oledshow\stm32f4xx_hal_msp.o"
+"oledshow\stm32f4xx_hal_tim.o"
+"oledshow\stm32f4xx_hal_tim_ex.o"
+"oledshow\stm32f4xx_hal_rcc.o"
+"oledshow\stm32f4xx_hal_rcc_ex.o"
+"oledshow\stm32f4xx_hal_flash.o"
+"oledshow\stm32f4xx_hal_flash_ex.o"
+"oledshow\stm32f4xx_hal_flash_ramfunc.o"
+"oledshow\stm32f4xx_hal_gpio.o"
+"oledshow\stm32f4xx_hal_dma_ex.o"
+"oledshow\stm32f4xx_hal_dma.o"
+"oledshow\stm32f4xx_hal_pwr.o"
+"oledshow\stm32f4xx_hal_pwr_ex.o"
+"oledshow\stm32f4xx_hal_cortex.o"
+"oledshow\stm32f4xx_hal.o"
+"oledshow\stm32f4xx_hal_exti.o"
+"oledshow\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "OLEDSHOW\OLEDSHOW.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OLEDSHOW.map" -o OLEDSHOW\OLEDSHOW.axf
