@@ -28,5 +28,9 @@ oledshow/main.o: ..\Src\main.c ..\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
-  ..\Inc\gpio.h ..\Inc\main.h ..\OLED\oled.h ..\OLED\sys.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h ..\Inc\dma.h \
+  ..\Inc\main.h ..\Inc\rng.h ..\Inc\usart.h ..\Inc\gpio.h ..\OLED\oled.h \
+  ..\OLED\sys.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  ..\MyFile\My_main.h

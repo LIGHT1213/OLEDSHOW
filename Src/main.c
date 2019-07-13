@@ -20,11 +20,15 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
+#include "rng.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "oled.h"
+#include "My_main.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,25 +100,25 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
+  MX_UART5_Init();
+  MX_RNG_Init();
   /* USER CODE BEGIN 2 */
 	OLED_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-		OLED_ShowString(0,0,"  SERVER ",24);  
-	OLED_ShowString(0,24, "Servo drive",16);  
- 	OLED_ShowString(0,40,"TIME 2017/7/23",12);  
- 	OLED_ShowString(0,52,"ASCII:",12);  
- 	OLED_ShowString(64,52,"SPEED:",12);  
 	OLED_Refresh_Gram();
   while (1)
   {
-	PBout(1)=1;	
+		//printf("123123");
+		PBout(1)=1;	
 		OLED_ShowChar(36,52,t,12,1);//显示ASCII字符	
 		OLED_ShowNum(94,52,t,3,12);	//显示ASCII字符的码值    
 		OLED_Refresh_Gram();        //更新显示到OLED
-		HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_12); 
+		t++;
+		UserMain();
 		HAL_Delay(1000);
     /* USER CODE END WHILE */
 
@@ -145,7 +149,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLM = 4;
   RCC_OscInitStruct.PLL.PLLN = 168;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = 4;
+  RCC_OscInitStruct.PLL.PLLQ = 7;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();

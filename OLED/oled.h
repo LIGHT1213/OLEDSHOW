@@ -3,38 +3,38 @@
 #include "sys.h"
 #include "stdlib.h"	    
 //////////////////////////////////////////////////////////////////////////////////	 
-//±¾³ÌÐòÖ»¹©Ñ§Ï°Ê¹ÓÃ£¬Î´¾­×÷ÕßÐí¿É£¬²»µÃÓÃÓÚÆäËüÈÎºÎÓÃÍ¾
-//ALIENTEK STM32F407¿ª·¢°å
-//OLED Çý¶¯´úÂë	   
-//ÕýµãÔ­×Ó@ALIENTEK
-//¼¼ÊõÂÛÌ³:www.openedv.com
-//´´½¨ÈÕÆÚ:2014/5/4
-//°æ±¾£ºV1.0
-//°æÈ¨ËùÓÐ£¬µÁ°æ±Ø¾¿¡£
-//Copyright(C) ¹ãÖÝÊÐÐÇÒíµç×Ó¿Æ¼¼ÓÐÏÞ¹«Ë¾ 2014-2024
+//æœ¬ç¨‹åºåªä¾›å­¦ä¹ ä½¿ç”¨ï¼Œæœªç»ä½œè€…è®¸å¯ï¼Œä¸å¾—ç”¨äºŽå…¶å®ƒä»»ä½•ç”¨é€”
+//ALIENTEK STM32F407å¼€å‘æ¿
+//OLED é©±åŠ¨ä»£ç 	   
+//æ­£ç‚¹åŽŸå­@ALIENTEK
+//æŠ€æœ¯è®ºå›:www.openedv.com
+//åˆ›å»ºæ—¥æœŸ:2014/5/4
+//ç‰ˆæœ¬ï¼šV1.0
+//ç‰ˆæƒæ‰€æœ‰ï¼Œç›—ç‰ˆå¿…ç©¶ã€‚
+//Copyright(C) å¹¿å·žå¸‚æ˜Ÿç¿¼ç”µå­ç§‘æŠ€æœ‰é™å…¬å¸ 2014-2024
 //All rights reserved									  
 ////////////////////////////////////////////////////////////////////////////////// 	  
  
 
-//OLEDÄ£Ê½ÉèÖÃ
-//0: 4Ïß´®ÐÐÄ£Ê½  £¨Ä£¿éµÄBS1£¬BS2¾ù½ÓGND£©
-//1: ²¢ÐÐ8080Ä£Ê½ £¨Ä£¿éµÄBS1£¬BS2¾ù½ÓVCC£©
+//OLEDæ¨¡å¼è®¾ç½®
+//0: 4çº¿ä¸²è¡Œæ¨¡å¼  ï¼ˆæ¨¡å—çš„BS1ï¼ŒBS2å‡æŽ¥GNDï¼‰
+//1: å¹¶è¡Œ8080æ¨¡å¼ ï¼ˆæ¨¡å—çš„BS1ï¼ŒBS2å‡æŽ¥VCCï¼‰
 #define OLED_MODE 	0 
 		    						  
-//-----------------OLED¶Ë¿Ú¶¨Òå----------------  					   
+//-----------------OLEDç«¯å£å®šä¹‰----------------  					   
 #define OLED_CS 	PBout(7)//CS
 #define OLED_RST  PBout(5)//RES
 #define OLED_RS 	PBout(6)//DC
 #define OLED_WR 	PBout(0)//  
 #define OLED_RD 	PBout(1)
  
-//Ê¹ÓÃ4Ïß´®ÐÐ½Ó¿ÚÊ±Ê¹ÓÃ 
+//ä½¿ç”¨4çº¿ä¸²è¡ŒæŽ¥å£æ—¶ä½¿ç”¨ 
 #define OLED_SCLK 	PBout(3)
 #define OLED_SDIN 	PBout(4)
 		     
-#define OLED_CMD  	0		//Ð´ÃüÁî
-#define OLED_DATA 	1		//Ð´Êý¾Ý
-//OLED¿ØÖÆÓÃº¯Êý
+#define OLED_CMD  	0		//å†™å‘½ä»¤
+#define OLED_DATA 	1		//å†™æ•°æ®
+//OLEDæŽ§åˆ¶ç”¨å‡½æ•°
 void OLED_WR_Byte(u8 dat,u8 cmd);	    
 void OLED_Display_On(void);
 void OLED_Display_Off(void);
