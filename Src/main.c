@@ -79,6 +79,7 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 	u8 t=0;
+	extern uint8_t command[5];
   /* USER CODE END 1 */
   
 
@@ -105,21 +106,17 @@ int main(void)
   MX_RNG_Init();
   /* USER CODE BEGIN 2 */
 	OLED_Init();
+	HAL_UART_Receive_DMA(&huart5,command,5);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	OLED_ShowString(0,0,"  çŠ¶æ€æ˜¾ç¤º ",24);
 	OLED_Refresh_Gram();
   while (1)
   {
 		//printf("123123");
-		PBout(1)=1;	
-		OLED_ShowChar(36,52,t,12,1);//ÏÔÊ¾ASCII×Ö·û	
-		OLED_ShowNum(94,52,t,3,12);	//ÏÔÊ¾ASCII×Ö·ûµÄÂëÖµ    
-		OLED_Refresh_Gram();        //¸üĞÂÏÔÊ¾µ½OLED
-		t++;
 		UserMain();
-		HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

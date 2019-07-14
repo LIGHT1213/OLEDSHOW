@@ -31,4 +31,5 @@ oledshow/my_main.o: ..\MyFile\My_main.c ..\MyFile\My_main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
   ..\Inc\usart.h ..\Inc\main.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h ..\OLED\oled.h \
+  ..\OLED\sys.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h

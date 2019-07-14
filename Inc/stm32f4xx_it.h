@@ -60,6 +60,7 @@ void DMA1_Stream0_IRQHandler(void);
 void EXTI15_10_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 void ShowMeYourLife(void);
+void SystemTickCricle(void);
 /* USER CODE END EFP */
 
 #ifdef __cplusplus

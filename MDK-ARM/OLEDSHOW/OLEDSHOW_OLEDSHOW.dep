@@ -1,7 +1,7 @@
 Dependencies for Project 'OLEDSHOW', Target 'OLEDSHOW': (DO NOT MODIFY !)
 F (startup_stm32f407xx.s)(0x5D29EA63)(--cpu Cortex-M4.fp -g --pd "__MICROLIB SETA 1"-I.\RTE\_OLEDSHOW-IC:\Users\pan39\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\pan39\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 528"--pd "_RTE_ SETA 1"--pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst--xref -o oledshow\startup_stm32f407xx.o--depend oledshow\startup_stm32f407xx.d)
 F (..\OLED\oled.c)(0x5D29A001)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../OLED -I ../MyFile-I./RTE/_OLEDSHOW-IC:/Users/pan39/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/pan39/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o oledshow/oled.o -MD)
-I (..\OLED\oled.h)(0x5D299FFF)
+I (..\OLED\oled.h)(0x5D2A86B6)
 I (..\OLED\sys.h)(0x5D29A000)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D206CDD)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5D29EA61)
@@ -36,7 +36,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h)(0x5D206CDE)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5D206CDE)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5CEB78EA)
 I (..\OLED\oledfont.h)(0x5D29A000)
-F (../Src/main.c)(0x5D29EBFD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../OLED -I ../MyFile-I./RTE/_OLEDSHOW-IC:/Users/pan39/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/pan39/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o oledshow/main.o -MD)
+F (../Src/main.c)(0x5D2A8DA5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../OLED -I ../MyFile-I./RTE/_OLEDSHOW-IC:/Users/pan39/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/pan39/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o oledshow/main.o -MD)
 I (..\Inc\main.h)(0x5D29EA61)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D206CDD)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5D29EA61)
@@ -74,10 +74,10 @@ I (..\Inc\dma.h)(0x5D29EA60)
 I (..\Inc\rng.h)(0x5D29EA60)
 I (..\Inc\usart.h)(0x5D29EA61)
 I (..\Inc\gpio.h)(0x5D29EA60)
-I (..\OLED\oled.h)(0x5D299FFF)
+I (..\OLED\oled.h)(0x5D2A86B6)
 I (..\OLED\sys.h)(0x5D29A000)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5CEB78EA)
-I (..\MyFile\My_main.h)(0x5D29EA7C)
+I (..\MyFile\My_main.h)(0x5D2A88F1)
 F (../Src/gpio.c)(0x5D29EA60)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../OLED -I ../MyFile-I./RTE/_OLEDSHOW-IC:/Users/pan39/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/pan39/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o oledshow/gpio.o -MD)
 I (..\Inc\gpio.h)(0x5D29EA60)
 I (..\Inc\main.h)(0x5D29EA61)
@@ -218,7 +218,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D206CDE)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h)(0x5D206CDE)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5D206CDE)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5CEB78EA)
-F (../Src/stm32f4xx_it.c)(0x5D29EA61)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../OLED -I ../MyFile-I./RTE/_OLEDSHOW-IC:/Users/pan39/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/pan39/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o oledshow/stm32f4xx_it.o -MD)
+F (../Src/stm32f4xx_it.c)(0x5D2A858F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../OLED -I ../MyFile-I./RTE/_OLEDSHOW-IC:/Users/pan39/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/pan39/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o oledshow/stm32f4xx_it.o -MD)
 I (..\Inc\main.h)(0x5D29EA61)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D206CDD)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5D29EA61)
@@ -252,7 +252,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5D206CDE)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h)(0x5D206CDE)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5D206CDE)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5CEB78EA)
-I (..\Inc\stm32f4xx_it.h)(0x5D29EB0D)
+I (..\Inc\stm32f4xx_it.h)(0x5D2A8376)
 F (../Src/stm32f4xx_hal_msp.c)(0x5D29EA61)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../OLED -I ../MyFile-I./RTE/_OLEDSHOW-IC:/Users/pan39/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/pan39/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o oledshow/stm32f4xx_hal_msp.o -MD)
 I (..\Inc\main.h)(0x5D29EA61)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D206CDD)
@@ -900,8 +900,8 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5D206CDE)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5CEB78EA)
 I (..\Inc\usart.h)(0x5D29EA61)
 F (..\MyFile\My_uart.h)(0x5D29AE7C)()
-F (..\MyFile\My_main.c)(0x5D29EC48)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../OLED -I ../MyFile-I./RTE/_OLEDSHOW-IC:/Users/pan39/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/pan39/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o oledshow/my_main.o -MD)
-I (..\MyFile\My_main.h)(0x5D29EA7C)
+F (..\MyFile\My_main.c)(0x5D2A8E0F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../OLED -I ../MyFile-I./RTE/_OLEDSHOW-IC:/Users/pan39/AppData/Local/Arm/Packs/ARM/CMSIS/5.5.1/CMSIS/Core/Include-IC:/Users/pan39/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx-o oledshow/my_main.o -MD)
+I (..\MyFile\My_main.h)(0x5D2A88F1)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5D206CDD)
 I (..\Inc\stm32f4xx_hal_conf.h)(0x5D29EA61)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5D206CDE)
@@ -936,4 +936,7 @@ I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5D206CDE)
 I (..\Inc\usart.h)(0x5D29EA61)
 I (..\Inc\main.h)(0x5D29EA61)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5CEB78EA)
-F (..\MyFile\My_main.h)(0x5D29EA7C)()
+I (..\OLED\oled.h)(0x5D2A86B6)
+I (..\OLED\sys.h)(0x5D29A000)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5CEB78EA)
+F (..\MyFile\My_main.h)(0x5D2A88F1)()

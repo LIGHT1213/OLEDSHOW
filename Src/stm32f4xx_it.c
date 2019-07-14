@@ -28,6 +28,8 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN TD */
 int tick=1000;
+int counter=10;
+uint8_t Scan=0;
 /* USER CODE END TD */
 
 /* Private define ------------------------------------------------------------*/
@@ -183,10 +185,11 @@ void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
   ShowMeYourLife();
+	
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
-
+	SystemTickCricle();
   /* USER CODE END SysTick_IRQn 1 */
 }
 
@@ -236,6 +239,15 @@ void ShowMeYourLife(void)
 	{
 		tick=1000;
 		HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_12); 
+	}
+}
+void SystemTickCricle(void)
+{
+		counter--;
+	if(counter<0)
+	{
+		counter=10;
+		Scan=1;
 	}
 }
 /* USER CODE END 1 */
