@@ -22,6 +22,7 @@
 #include "main.h"
 #include "dma.h"
 #include "rng.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -79,7 +80,7 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 	u8 t=0;
-	extern uint8_t command[5];
+	extern uint8_t command[6];
   /* USER CODE END 1 */
   
 
@@ -104,15 +105,16 @@ int main(void)
   MX_DMA_Init();
   MX_UART5_Init();
   MX_RNG_Init();
+  MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
 	OLED_Init();
-	HAL_UART_Receive_DMA(&huart5,command,5);
+	HAL_UART_Receive_DMA(&huart5,command,6);
+	HAL_TIM_PWM_Init(&htim14);
+	HAL_TIM_PWM_Start(&htim14,TIM_CHANNEL_1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	OLED_ShowString(0,0,"  状态显示 ",24);
-	OLED_Refresh_Gram();
   while (1)
   {
 		//printf("123123");

@@ -1,4 +1,5 @@
-oledshow/usart.o: ..\Src\usart.c ..\Inc\usart.h ..\Inc\main.h \
+oledshow/mycontrol.o: ..\MyFile\MyControl.c ..\MyFile\MyControl.h \
+  ..\MyFile\My_main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -32,4 +33,9 @@ oledshow/usart.o: ..\Src\usart.c ..\Inc\usart.h ..\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h
+  ..\Inc\usart.h ..\Inc\main.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h ..\OLED\oled.h \
+  ..\OLED\sys.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  ..\Inc\tim.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  ..\MyFile\MyMath.h

@@ -29,8 +29,12 @@ oledshow/main.o: ..\Src\main.c ..\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h ..\Inc\dma.h \
-  ..\Inc\main.h ..\Inc\rng.h ..\Inc\usart.h ..\Inc\gpio.h ..\OLED\oled.h \
-  ..\OLED\sys.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  ..\MyFile\My_main.h
+  ..\Inc\main.h ..\Inc\rng.h ..\Inc\tim.h ..\Inc\usart.h ..\Inc\gpio.h \
+  ..\OLED\oled.h ..\OLED\sys.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h ..\MyFile\My_main.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  ..\MyFile\MyControl.h ..\MyFile\My_main.h ..\MyFile\MyMath.h

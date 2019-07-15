@@ -1,0 +1,16 @@
+#include "MyControl.h" 
+extern uint8_t MyCommand[6];
+void GetAndTransformationCommand(void)
+{
+	static int times=0;
+	GetCommand();
+	times++;
+	if(times>=10)
+	{
+	for(int i=0;i<=3;i++)
+	{
+		OLED_ShowChar(10*i,0,MyCommand[i],12,1);
+	}
+	times=0;
+	}
+}
