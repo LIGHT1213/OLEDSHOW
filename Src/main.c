@@ -119,6 +119,7 @@ int main(void)
   {
 		//printf("123123");
 		UserMain();
+		OLED_Refresh_Gram();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

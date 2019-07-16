@@ -1,6 +1,6 @@
 int MyIntPow(int a,int b)
 {
-	int l=0;
+	int l=1;
 	if(b==0)
 	{
 		return 1;

@@ -1,8 +1,9 @@
 #include "My_main.h"
 uint8_t command[6];
 uint8_t MyCommand[6];
-
+extern uint8_t a;
 extern uint8_t Scan;
+uint8_t IsRec=1;
 void UserMain(void)
 {
 	if(Scan==1)
@@ -30,4 +31,6 @@ void GetCommand(void)
 	{
 		MyCommand[i]=command[i];
 	}
+	a=0;
+	//IsRec=0;
 }
