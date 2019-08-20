@@ -1,6 +1,7 @@
 #include "MyControl.h"
 extern uint8_t MyCommand[6];
 int FinalCommand=0;
+float LastPIDValue=0;
 uint8_t a=1;
 extern uint8_t IsRec;
 static int times = 0;
@@ -26,7 +27,7 @@ void GetAndTransformationCommand(void)
 void PIDControlLight(void)
 {
 	uint8_t a=1;
-	static float previous_error = 0;
+	static float previous_error = 0,ValueDifference=0;;
 	float Kp = 1, Ki = 0.08, Kd = 0.5;
 	int LightMySET=250;
 	float LightError=FinalCommand-LightMySET;
@@ -38,10 +39,15 @@ void PIDControlLight(void)
   I = I + LightError;
   D = LightError - previous_error;
   PID_value = (Kp * P) + (Ki * I) + (Kd * D);
+	//PID算法错了！！！这个算法大概会导致爆闪吧
+	//注意这里的系统是一个随动系统，在误差为零的瞬间输出为零
+	//导致误差再次出现，循环往复。
+	LastPIDValue=PID_value;
+	ValueDifference=LastPIDValue-PID_value;
   previous_error = LightError;
 	OLED_ShowString(0,24,str3,12);
 	OLED_ShowNum(80,24,PID_value,4,12);
-	__HAL_TIM_SET_COMPARE(&htim14,TIM_CHANNEL_1,PID_value);
+	__HAL_TIM_SET_COMPARE(&htim14,TIM_CHANNEL_1,LastPIDValue+ValueDifference);
 	//if(IsRec==1)
 	printf("%d",a);
 }

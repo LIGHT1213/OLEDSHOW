@@ -1,3 +1,4 @@
+#include "MyMath.h"
 int MyIntPow(int a,int b)
 {
 	int l=1;

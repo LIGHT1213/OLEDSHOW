@@ -868,8 +868,8 @@ ARM Macro Assembler    Page 14
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --depend=o
 ledshow\startup_stm32f407xx.d -ooledshow\startup_stm32f407xx.o -I.\RTE\_OLEDSHO
-W -IC:\Users\pan39\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include -
-IC:\Users\pan39\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS
+W -IC:\Users\pan39\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include -
+IC:\Users\pan39\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS
 \Device\ST\STM32F4xx\Include --predefine="__MICROLIB SETA 1" --predefine="__UVI
 SION_VERSION SETA 528" --predefine="_RTE_ SETA 1" --predefine="STM32F407xx SETA
  1" --list=startup_stm32f407xx.lst startup_stm32f407xx.s

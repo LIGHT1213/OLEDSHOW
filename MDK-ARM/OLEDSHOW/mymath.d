@@ -1,1 +1,1 @@
-oledshow/mymath.o: ..\MyFile\MyMath.c
+oledshow/mymath.o: ..\MyFile\MyMath.c ..\MyFile\MyMath.h
